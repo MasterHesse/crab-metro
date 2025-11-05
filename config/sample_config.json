@@ -1,0 +1,39 @@
+{
+  "lines": [
+    {
+      "line_name": "Red Line",
+      "color": "#FF0000",
+      "stations": [
+        { "from": "A", "to": "B", "distance": 1.2, "travel_time": 3.5 },
+        { "from": "B", "to": "C", "distance": 0.8, "travel_time": 2.0 }
+      ]
+    },
+    {
+      "line_name": "Blue Line",
+      "color": "#0000FF",
+      "stations": [
+        { "from": "C", "to": "D", "distance": 1.5, "travel_time": 4.0 },
+        { "from": "D", "to": "E", "distance": 2.0, "travel_time": 5.0 }
+      ]
+    },
+    {
+      "line_name": "Transfer Line",
+      "stations": [
+        { "from": "B", "to": "D", "distance": 1.0, "travel_time": 2.5, "transfer_penalty": 1.0 }
+      ]
+    }
+  ],
+  "fare_rules": {
+    "base_fare": 2.0,
+    "per_km": 0.5,
+    "transfer_fee": 0.8,
+    "discounts": [
+      { "name": "student", "rule_type": "percentage", "value": 0.8 }
+    ]
+  },
+  "metadata": {
+    "city": "Crab City",
+    "version": "1.0",
+    "last_updated": "2025-11-05T12:00:00Z"
+  }
+}
